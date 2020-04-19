@@ -9,7 +9,7 @@ def base_layout():
 
 @app.route("/items")
 def GetData():
-        f = open('data/resto-shaman.json', 'r')
+        f = open('data/gear/resto-shaman.json', 'r')
         daten = json.load(f)
         columns = ["Stam", "Agi"]
         return render_template("items.html", records=daten, colnames=columns, website="https://tbc.cavernoftime.com")
