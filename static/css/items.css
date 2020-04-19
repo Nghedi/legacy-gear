@@ -1,0 +1,82 @@
+body{
+	background-color: black;
+	color: white;
+}
+td, th
+{
+	padding-left: 3px;
+	padding-right: 3px;
+	font-size: small;
+}
+/* item links */
+a.Legendary:link, a.Legendary:visited
+{
+	color: #ff4400;
+	text-decoration: none;
+}
+a.Legendary:hover
+{
+	color: #ff4400;
+	text-decoration: underline;
+}
+a.Epic:link, a.Epic:visited
+{
+	color: #aa00aa;
+	text-decoration: none;
+}
+				
+a.Epic:hover
+{
+	color: #aa00aa;
+	text-decoration: underline;
+}
+
+a.Rare:link, a.Rare:visited
+{
+	color: #0000dd;
+	text-decoration: none;
+}
+a.Rare:hover
+{
+	color: #0000dd;
+	text-decoration: underline;
+}
+a.Uncommon:link, a.Uncommon:visited
+{
+	color: #00dd00;
+	text-decoration: none;
+}
+a.Uncommon:hover
+{
+	color: #00dd00;
+	text-decoration: underline;
+}
+a.Common:link, a.Common:visited
+{
+	color: #777777;
+	text-decoration: none;
+}
+a.Common:hover
+{
+	color: #777777;
+	text-decoration: underline;
+}
+/* location link formatting */
+a:link, a:visited
+{
+	color: #0066CC;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #0066CC;
+	text-decoration: underline;
+}
+
+/* Sortable tables */
+table.sortable thead {
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
+}

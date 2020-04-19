@@ -1,0 +1,10 @@
+{% extends "base_layout.html" %}
+
+{% block title %}Legacy Gear{% endblock %}
+
+{% block css %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/items.css') }}">
+	<script type="text/javascript" src="http://cdn.cavernoftime.com/api/tooltip.js"></script>
+	<script type="text/javascript" src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+{% endblock %}

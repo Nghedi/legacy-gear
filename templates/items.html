@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% include "item_stats.html" %}
+
+<br>
+
+<table id="2" class="sortable" border="1">
+	<thead>
+		<tr>
+			<th>Name</th>
+			{% for col in colnames %}
+			<th>{{ col }}</th>
+			{% endfor %}
+		</tr>
+	</thead>
+	<tbody>
+		{% for record in records %}
+		<tr>
+			<td><a class={{ record["Quality"] }} href="{{ website }}/item={{record['ID'] }}">{{ record["Name"] }}</a></td>
+			{% for col in colnames %}
+			<td>{{ record[col] }}</td>
+			{% endfor %}
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+{% endblock %}
